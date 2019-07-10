@@ -1,6 +1,24 @@
 # primers-design
 
-## singularity
+
+## Installation
+
+### Dependencies
+
+#### EMBOSS
+
+```
+wget -m 'ftp://emboss.open-bio.org/pub/EMBOSS/'
+cd emboss.open-bio.org/pub/EMBOSS
+gunzip EMBOSS-latest.tar.gz
+tar xvzf emboss-latest.tar.gz
+cd EMBOSS-6.6.0/
+./configure --prefix=/usr/local/emboss
+mkdir /usr/local/emboss
+make && make install
+```
+
+### singularity
 
 Create a shell container
 ```
