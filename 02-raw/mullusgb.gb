@@ -1,0 +1,1120 @@
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN      
+    1 tgtatgcata cgtatactga tataggacac gatatgtatt aaaaccattt taatgattta
+       61 aaccaatcag gtcccaaatc cgtagaaatc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaacagc aaaaatacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtca gcccgcatgc aaccaggcat ccccatccct agtccctaaa
+      241 cagaaacgcg cagtaagaac ctaccatcaa ttaataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtagcaca taatgaatta ttcctggcat aggctcctac
+      361 ttcaggtcca caacttgtta taattcccca cactttcatt gacgcttgca taagttaatg
+      421 ctttcgacca taatagtcgt tacccaccat gccgagcatt cactccagag ggcagggggt
+      481 tccttttttc tttttctttt catctggcat ctcacagtgc actgagaagc gcaataataa
+      541 gagagaacat ctcttcctgt atacgtatat aaatgaaaag tattaaagac attaaaaaag
+      601 aaatacataa acagaatcca aggacataat gctgatctat acctcctcat atacctgtta
+      661 ccaccccctc ttcatttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttctag cccaaaatgt
+      781 gtttgtatac aatattataa  
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN 
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aagaccatct tartgattca
+       61 aaccaatcgg -tccaaaatc catagaagtc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaatacc aaaaatacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcg gcccacatgc aaccaggcac ccccatcccc agtccctaaa
+      241 cagaaacgcg cagtaagaac ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtagcaca aaatgaacta ttcctggcat aggctcctac
+      361 ttcaggtcca caacttgtta taattcccca cactttcatt gacgcttgca taagttaatg
+      421 ctttcgacca taataatcgt tacccaccat gccgagcatt cactccagcg ggcagggggt
+      481 tccttttttc tttttctttt catctggcat ttcacagtgc attagagagc gcaataataa
+      541 gagagaacat ctcttcctgt atgcgtatac aaatgaaaag tattaaagac attaaagaag
+      601 agatacataa acagaattca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttatag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb" 
+ORIGIN
+
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aagaccattt tartgattca
+       61 aaccaatcrg gtccaaaatc cataraagtc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaatacc aaaaatacaa aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgttg acccgcatgc aaccaggcat ccccatcccc agtccctaaa
+      241 cagaaacgcg cagtaagagc ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtagcaca gaatgaatta ttcctggcat aggctcctac
+      361 ttcaggtcca caacttgtta taattcccca cactttcatt gacgcttgca taagttaatg
+      421 ctttcgacca taataatcgt tacccaccat gccgagcatt cactccagcg ggcagggggt
+      481 tccttttttc tttttctttt catttggcat ctcacagtgc attaaagagc gcaataataa
+      541 gagagaacat ctcctcctgt atgcgtatac aaatgaaaag tattaaagac attaaagaag
+      601 aaatacataa acagaattca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaacct ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttatag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN 
+        1 tatatgcata cgtata-tga tataggacac gatatgtatt aagaccatct tartgattca
+       61 aaccaatcrg gtccaaaatc catagaagtc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaatacc aaaaatacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcg gcccacatgc aaccaggcac ccccatcccc agtccctaaa
+      241 cagaaacgcg cagtaagaac ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtagcaca aaatgaacta ttcctggcat aggctcctac
+      361 ttcaggtcca caacttgtta taattcccca cactttcatt gacgcttgca taagttaatg
+      421 ctttcgacca taataatcgt tacccaccat gccgagcatt cactccagcg ggcagggggt
+      481 tccttttttc tttttctttt catctggcat ttcacagtgc attagagagc gcaataataa
+      541 gagagaacat ctcttcctgt atgcgtatac aaatgaaaag tattaaagac attaaagaag
+      601 agatacataa acagaattca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttatag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN 
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aaaaccattt tartgattta
+       61 aaccaatcaa gtccaaaatc cattgaaacc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaataga aagaatacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcc gcccgcatgc aaccaggcat ccccatccct agtccctaaa
+      241 cagaaacacg cagtaagaac ctaccatcag ttgataactc aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtaacaca gaatgaatta ttcctggcat aggttcctac
+      361 ttcaggtcca caacttgtta taattcctta cactttcatc gacgcttgca taagttaatg
+      421 ctttcgacca tagtgatcgt tacccaccat gccgagcatt cactccagtg ggcagggggt
+      481 tccttttttc tttttctttt cacttggcat ctcacagtgc attaaggagc gcaataataa
+      541 gagggaacat ttcttcctgt atgtgtatac aaatgaaaag tattgaagac attaaagaag
+      601 aaatacataa acagaatcca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttctag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN 
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aagaccattt tartgattca
+       61 aaccaatcag gtccaaaatc cacagaagtc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaatacc aaaaatacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcg acccgcrtgc aaccaggcat ccccatcccc agtccctaaa
+      241 cagaaacgcg cagtaagaac ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtagcaca gaatgaatta ttcctggcat aggctcctac
+      361 ttcaggtcca caacttgtta taattcctca cactttcatt gacgcttgca taagttaatg
+      421 ctttcgacca taataatcgt tacccaccat gccgagcatt cactccagcg ggcagggggt
+      481 tccttttttc tttttctttt catctggcat ctcacagtgc attgaaaagc gcaataataa
+      541 gagagaacat ctcttcctgt atgcgtatac aaatggaaag tattaaagac attaaagaag
+      601 aaacacataa acagaattca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgca tgtgttatag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN 
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aagaccattt taatgattca
+       61 aaccaatcag gtccgaaatc catagaaacc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaatacc agaaatacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcg acccgcatgc aaccaggcat ccccatcccc agtccctaaa
+      241 cagaaacgcg cagtaagagc ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtagcaca aaatgaatta ttcctggcat aggctcctac
+      361 ttcaggtcca caacttgtta taattcctca cactttcatt gacgcttgca taagttaatg
+      421 ctttcgacca taataatcgt tacccaccat gccgagcatt cactccagtg ggcagggggt
+      481 tccttttttc tttttctttt catctggcat ctcacagtgc attgaagagc gcaataataa
+      541 gagagaacat ctcttcctgt atgtgtatac aaatggaaag tattaaagac attaaagaag
+      601 aaacacataa acagaattca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttatag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN 
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aaaaccattt tartgattta
+       61 aaccaatcaa gtccgaaatc catgaaaccc c-agaaaaca ggacagataa aaaagaa-ac
+      121 tcaaataagt acgaaataga gagagtacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcc acccgcatgc aaccaggcat ccccatccct agtccttaaa
+      241 cagaaacacg cagtaagaac ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtaacaca ggatgaacta ttcctggcat aggttcctac
+      361 ttcaggtcca taacttgtta taactcctta cactttcatc gacgcttgca taagttaatg
+      421 ctttcgacca tagtgatcgt tacccaccat gccgagcatt cactccagtg ggcagggggt
+      481 tccttttttc tttttctttt cacttggcat ctcacagtgc attaaggagc gcaataataa
+      541 gagggaacat ctcttcctgt atgtgtatac aaatgaaaag tattgaagac attaaagaag
+      601 aaatacataa acagaatcca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttctag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN 
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aaaaccattt tartgattta
+       61 aaccaatcaa gtccgaaatc cattgaaacc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaataga aagagtacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcc gcccgcatgc aaccaggcat ccccatccct agtccctaaa
+      241 cagaaacacg cagtaagaac ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtaacaca gaatgaatta ttcctggcat aggttcctac
+      361 ttcaggtcca caacttgtta taattcctta cactttcatc gacgcttgca taagttaatg
+      421 ctttcgacca taatgatcgt tacccaccat gccgagcatt cactccagtg ggcagggggt
+      481 tccttttttc tttttctttt cacttggcat ctcacagtgc attaaggagc gcaataataa
+      541 gagggaacat tttttcctgt atgtgtatac aaatgaaaag tattgaagac attaaagaag
+      601 aaatacataa acagaatcca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttctag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN 
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aagaccattt taatgattct
+       61 aaccaatcag gtccaaaatc cgtagaaatc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaatacc aaaaatacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcg gcccgcatgc aaccaggcat ccccatcccc agtcc-taaa
+      241 cagaaacgcg cagtaagagc ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtagcaca gaatgaatta ttcctggcat aggctcctac
+      361 ttcaggtcca caacttgtta taattcccca cactttcatt gacgcttgca taagttaatg
+      421 ctttcgacca taataatcgt tacccaccat gccgagcatt cactccagtg ggcagggggt
+      481 tccttttttc tttttctttt catctggcat ctcacagtgc attgaggagc gcaataataa
+      541 gagggaacat ctcttcctgt atgtgtatac aaatgaaaag tattaaagac attaaagaag
+      601 aaatacataa acagaattca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttatag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aaaaccattt taatgattca
+       61 aaccaatcaa gtccgaaatc catagaaacc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaatacc aagaatacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcg acccgcatgc aaccaggcat ccccatcccc agtccctaaa
+      241 cagaaacgcg cagtaagagc ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtagcaca gaatgaatta ttcctggcat aggctcctac
+      361 ttcaggtcca caacttgtta taattcccca cactttcatt gacgcttgca taagttaatg
+      421 ctttcgacca taataatcgt tacccaccat gccgagcgtt cactccagcg ggcagggggt
+      481 tccttttttc tttttctttt catctggcat ctcacagtgc attgaagagc gcaataataa
+      541 gagagaacat ctctccctgt atgcgtatac aaatgaaaag tattaaaggc attaaagaag
+      601 aaacacataa acaggattca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttatag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aaaaccattt taatgattta
+       61 aaccaatcaa gtccgaaatc cattgaaacc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaataga aagaatacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcg gcccgcatgc aaccaggcat ccccatccct agtccctaaa
+      241 cagaaacacg cagtaagaac ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtaacaca gaatgaatta ttcctggcat aggttcctac
+      361 ttcaggtccc caacttgtta taattcctta cactttcatc gacgcttgca taagttaatg
+      421 ctttcgacca taatgatcgt tacccaccat gccgagcatt cactccagcg ggcagggggt
+      481 tccttttttc tttttctttt cacttggcat ctcacagtgc attaaggagc gcaataataa
+      541 gagggaacat ttcttcctgt atgtgtatac aaatgaaaag tattaaagac attaaagaag
+      601 aaatacataa acagaatcca aggacataat gctgatctat acctcctcac atacctgtta
+      661 tcaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttctag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aaaaccattt tartgattta
+       61 aaccaatcaa gtccgaaatc cattgaaacc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaataga gagagtacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcc gcccgcatgc aaccaggcat ccccatccct agtccctaaa
+      241 cagaaacacg cagtaagaac ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtaacaca gaatgaatta ttcctggcat aggttcctac
+      361 ttcaggtcca caacttgtta taattcctta cactttcatc gacgcttgca taagttaatg
+      421 ctttcgacca tagtgatcgt tacccaccat gccgagcatt cactccagtg ggcagggggt
+      481 tccttttttc tttttctttt cacttggcat ctcacagtgc actaaggagc gcaataataa
+      541 gagggaacat ttcttcctgt atgtgtatat aaatgaaaag tattaaagac attaaagaag
+      601 aaatacataa acagaatcca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccc-g gaaacaggaa aacctctgcg tgtgttctag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aaaaccattt tartgattta
+       61 aaccaatcaa gtccgaaatc cactgaaacc ccagaaaaca gggcagataa aaaagaagac
+      121 tcaaataagt acgaaataga gagagtacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtct gcccgcatgc aaccaggcat ccccatccct agtccctaaa
+      241 cagaaacacg cagtaagaac ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtga gggtaacaca gaatgaatta ttcctggcat aggttcctac
+      361 ttcaggtcca caacttgtta taattcctta cactttcatc gacgcttgca taagttaatg
+      421 ctttcgacca taatgatcgt tacccaccat gccgagcatt cactccagtg ggcagggggt
+      481 tccttttttc tttttctttt cacttggcat ctcacagtgc attaaggagc gcaataataa
+      541 gagggaacat ctcttcctgt atgtgtatac aaatgaaaag tattaaagac attaaagaag
+      601 aaatacataa acagaatcca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttctag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aaaaccattt tartgattta
+       61 aaccaatcaa gtccaaaatc cattgaagcc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaataga gagaatacag aaatagaact gatgaccgct agcgatttat
+      181 tgatcagatt aaacgtgtcc gcccgcatgc aaccaggcat ccccatccct agtccctaaa
+      241 cagaaacgcg cagtaagagc ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtaacaca gaatgaatta ttcctggcat aggctcctac
+      361 ttcaggtcca caacttgtta taattcctta cactttcatc gacgcttgca taagttaatg
+      421 ctttcgacca tagtgatcgt tacccaccat gccgagcatt cactccagtg ggcagggggt
+      481 tccttttttc tttttctttt cacttggcat ctcacagtgc attaagaagc gcaataataa
+      541 gagggaacat ttctccctgt atgtgtatac aaatgaaaag tattaaagac attaaagaag
+      601 aaatacataa acagaatcca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttctag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aagaccattt taatgattca
+       61 aaccaatcag gtccgaaatc catagaggtc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgatatacc agaaatacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcg gcccgcatgc aaccaggcat ccccatcccc agtccctaaa
+      241 cagaaacgcg cagtaagagc ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtagcaca ggatgaatta ttcctggcat aggctcctac
+      361 ttcaggttca caacttgtta taattcccca cactttcatt gacgcttgca taagttaatg
+      421 ctttcgacca taataatcgt tacccaccat gccgagcatt cactccagcg ggcagggggt
+      481 tccttttttc tttttctttt catttggcat ctcacagtgc attgaagagc gcaataataa
+      541 gagagaacat ctcctcctgt atgcgtatac aaatgaaaag tatcaaagac attaaagaag
+      601 aaacacataa acagaattca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttatag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aagaccattt taatgattca
+       61 aaccaatcag gtccgaaatc catagaaatc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaatacc aaaaatacag aaatagaact tatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcg gcccgcatgc aaccaggcat ccccatcccc agtccctaaa
+      241 cagaaacgcg cagtaagaac ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtagcaca aaatgaatta ttcctggcat aggctcctac
+      361 ttcaggtcca caacttgtta taattcctca cactttcatt gacgcttgca taagttaatg
+      421 ctttcgacca taataatcgt tacccaccat gccgagcatt cactccagtg ggcagggggt
+      481 tccttttttc tttttctttt catctggcat ctcacagtgc attgaagagc gcaataataa
+      541 gagagaacat ctcttcctgt atgtgtatac aaatggaaag tattaaagac attaaagaag
+      601 aaacacataa acagaactca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcct gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttatag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aaaaccattt tartgattta
+       61 aaccaatcag gtccgaaatc catagaagcc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaacagt agaggtacaa aaatagaact gatgaccgct agcgatttat
+      181 taatcagact aaacgtgttg gtccgcrtgc aaccaggcat ccccatccct agtccctaaa
+      241 cagaaacgcg cagtaagaac ctaccatcag ttgataactc gaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtga gggtaacaca gaatgaatta ttcctggcat aggctcctac
+      361 ttcaggtcca taacttgtta taattcctca cactttcatt gacgcttaca taagttaatg
+      421 ctttcgacca taataatcgt tacccaccat gccgagcgtt cactccagtg ggcagggggt
+      481 tccttttttc tttttctttt catctggcat ctcacagtgc attaaaaagc gcaataataa
+      541 gagagaacat ctctgcctgt atgcgtatat gaatggaaag tattaaaaac attaaagaag
+      601 aaatacataa acagaattca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttctag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN
+        1 tatatgcata cgtatactga tataggacac gatatgtatt aaaaccattt taatgattta
+       61 aaccaatcaa gtccgaaatc cattgaaacc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaataga gagagtacag aaatagaact gatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcc acccgcatgc aaccaggcat ccccatccct agtccctaaa
+      241 cagaaacacg cagtaagaac ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtaacaca gaatgaatta ttcctggcat aggttcctac
+      361 ttcaggtcca caacttgtta taattcctta cactttcatc gacgcttgca taagttaatg
+      421 ctttcgacca taatgatcgt tacccaccat gccgagcatt cactccagtg ggcagggggt
+      481 tccttttttc tttttctttt cacttggcat ctcacagtgc actaaggagc gcaataataa
+      541 gagggaacat ttcttcctgt atgtgtatat aaatgaaaag tattaaagac attaaagaag
+      601 aaatacataa acagaatcca aggacataat gctgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttctag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
+
+LOCUS       EU492131                781 bp    DNA     linear   VRT 26-JUL-2016
+DEFINITION  Mullus surmuletus voucher MNHN 2005-1625 cytochrome b (cytb) gene,
+            complete cds; mitochondrial.
+ACCESSION   EU492131
+VERSION     EU492131.1
+KEYWORDS    .
+SOURCE      mitochondrion Mullus surmuletus (striped red mullet)
+  ORGANISM  Mullus surmuletus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Actinopterygii; Neopterygii; Teleostei; Neoteleostei;
+            Acanthomorphata; Syngnathiaria; Syngnathiformes; Mulloidea;
+            Mullidae; Mullus.
+REFERENCE   1  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     FishTrace: Genetic Catalogue, Biological Reference Collections and
+            Online Database of European Marine Fishes (www.fishtrace.org)
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 781)
+  AUTHORS   van Pelt-Heerschap,H. and Stein,A.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-FEB-2008) Wageningen IMARES (Institute for Marine
+            Recources and Ecosystem Studies), Haringkade 1, PO Box 68, 1970 AB,
+            IJmuiden, Velsen, Netherlands
+FEATURES             Location/Qualifiers
+     source          1..781
+                     /organism="Mullus surmuletus"
+                     /organelle="mitochondrion"
+                     /mol_type="genomic DNA"
+                     /isolation_source="North Sea"
+                     /specimen_voucher="MNHN 2005-1625; MulSur_NS_02"
+                     /db_xref="taxon:87757"
+                     /tissue_type="muscle"
+                     /country="Netherlands"
+                     /note="authority: Mullus surmuletus Linnaeus"
+     gene            1..781
+                     /gene="cytb"
+     CDS             1..781
+                     /gene="cytb"  
+                     
+ORIGIN
+        1 tgtatgcata cgtatactga tataggacac gatatgtatt aaaaccattt taatgattca
+       61 aaccaatcag gtccagaatc catagaagtc ccagaaaaca ggacagataa aaaagaagac
+      121 tcaaataagt acgaaatacc aaaaatacag aaatagaact aatgaccgct agcgatttat
+      181 taatcagatt aaacgtgtcg acccgcatgc aaccaggcat ccccatcccc agtccctaaa
+      241 cagaaacgcg cagtaagagc ctaccatcag ttgataactt aaagcatacg tttattgaag
+      301 gtgagggaca aaaatcgtgg gggtagcaca gaatgaatta ttcctggcat aggttcctac
+      361 ttcaggtcca caacttgtta taattcccca cactttcatt gacgcttgca taagttaatg
+      421 ctttcgacca taataatcgt tacccaccat gccgagcatt cactccagcg ggcagggggt
+      481 tccttttttc tttttctttt catttggcat ctcacagtgc attgaagagc gcaataataa
+      541 gagagaacat ctcctcctgt atgtgtatgc aaatgaaaag tattaaagac attaaagaag
+      601 aaacacataa acagaattca aggacataat gatgatctat acctcctcac atacctgtta
+      661 ccaccccctc ttcgtttttg cgtttaaccc ccctaccccc ctacactcgt gagatcctta
+      721 tcactcctgt aaaccccccg gaaacaggaa aacctctgcg tgtgttatag cccaaaatgt
+      781 gtttgtatac aatattataa
+//
