@@ -1,5 +1,22 @@
 # primers-design
 
+## singularity
+
+Create a shell container
+```
+singularity shell -B `pwd`:/workf,/entrepot/donnees/edna/referenceDatabase/TAXO/:/taxo,/entrepot/donnees/edna/referenceDatabase/EMBL:/embl /entrepot/utils/conteneurs/obitools.simg
+```
+set up embl and taxo folders into the container
+```
+cd /workf/
+rm -Rf 02-raw/EMBL
+rm 02-raw/taxdump
+ln -s /embl/ 02-raw/EMBL
+ln -s /taxo/ 02-raw/taxdump
+
+```
+
+
 
 
 ## Data

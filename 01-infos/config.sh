@@ -12,7 +12,7 @@ EMBLOBIFA=02-raw/EMBL.obifasta
 FASTAF=02-raw/mullus.taxid.fa
 ## ecopcr database
 #ECOPCRDAT=03-ecopcr/test
-ECOPCRDAT=03-ecopcr/multidata
+ECOPCRDAT=03-ecopcr/refdb
 
 #ecoprimers database
 #ECOPRIME=04-primers
