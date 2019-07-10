@@ -1,0 +1,8 @@
+02-raw/EMBL/*
+02-raw/EMBL.obifasta/*
+03-ecopcr/*
+04-primers/*
+!03-ecopcr/.gitkeep
+!04-primers/.gitkeep
+!02-raw/EMBL.obifasta/.gitkeep
+!02-raw/EMBL/.gitkeep
