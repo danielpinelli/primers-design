@@ -1,5 +1,7 @@
 ## convert sequence fasta into embl
 seqret -sequence 02-raw/mullus.taxid.fa -osformat embl -outseq mullus.taxid.dat
+## remove empty line
+sed -i 's/XX//g' mullus.taxid.dat
 ## add embl header
 sed "s/DE   surmuletus (.*) taxid=87757\;/$(sed -e 's/[\&/]/\\&/g' -e 's/$/\\n/' 01-infos/header_dat | tr -d '\n')/" mullus.taxid.dat > mullus.embl.dat
 ## remove useless ID lines
