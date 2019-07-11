@@ -1,9 +1,22 @@
-ID   INTRAPOPMUL1; SV 1; linear; unassigned DNA; STD; UNC; 800 BP.
+ID   INTRAPOPMUL1; SV 1; linear; genomic DNA; STD; VRT; 800 BP.
 XX
 AC   INTRAPOPMUL1;
 XX
 DT   18-JUN-2019
 XX
+DE   Mullus surmuletus mitochondrial DNA Dloop.
+XX
+KW   .
+XX
+OS   Mullus surmuletus (striped red mullet)
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Actinopterygii; Neopterygii; Teleostei; Neoteleostei; Acanthomorphata;
+OC   Syngnathiaria; Syngnathiformes; Syngnathiformes;
+OC   Mulloidea; Mullidae; Mullus.
+OG   Mitochondrion
+XX
 FT   source          1..800
 FT                   /organism="Mullus surmuletus"
+FT                   /organelle="mitochondrion"
+FT                   /mol_type="genomic DNA"
 FT                   /db_xref="taxon:87757"
