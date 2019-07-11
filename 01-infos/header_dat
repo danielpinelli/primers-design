@@ -15,6 +15,8 @@ OC   Syngnathiaria; Syngnathiformes; Syngnathiformes;
 OC   Mulloidea; Mullidae; Mullus.
 OG   Mitochondrion
 XX
+FH   Key             Location/Qualifiers
+FH
 FT   source          1..800
 FT                   /organism="Mullus surmuletus"
 FT                   /organelle="mitochondrion"
