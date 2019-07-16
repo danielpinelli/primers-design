@@ -18,7 +18,7 @@ ECOPCRDAT=03-GROS_ecopcr/refdb
 #ECOPRIME=04-primers
 ECOPRIME=04-primers/mullus01.ecoprimers
 
-
+###############################################################################
 ## ecoPCR arguments
 ### [-e] Maximum number of errors (mismatches) allowed per primer.
 ecoPCR_e=3
@@ -26,6 +26,9 @@ ecoPCR_e=3
 ecoPCR_l=20
 ### [-L] Maximum length of the in silico amplified DNA fragment, excluding primers.
 ecoPCR_L=150
+
+## teleostei taxon ID
+TELEOSTEI_TAXID=32443
 
 
 ### 5' primer sequence MS-DL1-F

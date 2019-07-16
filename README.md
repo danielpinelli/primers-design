@@ -34,7 +34,15 @@ ln -s /taxo/ 02-raw/taxdump
 
 ```
 
+### R packages
 
+#### ROBITOOLS
+
+load R environment and then type :
+```
+install.packages("devtools")
+devtools::install_github("r-lib/devtools")
+```
 
 ## Data
 
