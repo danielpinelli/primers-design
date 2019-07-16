@@ -19,3 +19,17 @@ ECOPCRDAT=03-ecopcr/refdb
 ECOPRIME=04-primers/mullus01.ecoprimers
 
 
+## ecoPCR arguments
+### [-e] Maximum number of errors (mismatches) allowed per primer.
+ecoPCR_e=3
+### [-l] Minimum length of the in silico amplified DNA fragment, excluding primers.
+ecoPCR_l=20
+### [-L] Maximum length of the in silico amplified DNA fragment, excluding primers.
+ecoPCR_L=150
+
+
+### 5' primer sequence MS-DL1-F
+MS_DL1_F=CATACGTATACTGATATA
+### 3' primer sequence MS-DL1-R
+MS_DL1_R=TAATAAATCGCTAGCGGT
+

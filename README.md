@@ -36,7 +36,6 @@ ln -s /taxo/ 02-raw/taxdump
 
 
 
-
 ## Data
 
 - [mullus.fa](02-raw/mullus.fa) : j'ai sequence ces donnees.....
