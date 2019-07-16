@@ -38,10 +38,23 @@ ln -s /taxo/ 02-raw/taxdump
 
 #### ROBITOOLS
 
-load R environment and then type :
+ubuntu linux shell
+```
+yes | sudo apt-get install libcurl4-openssl-dev libxml2 libxml2-dev libssl-dev
+
+git clone https://git.metabarcoding.org/obitools/ROBITaxonomy.git
+git clone https://git.metabarcoding.org/obitools/ROBITools.git
+```
+
+R environment
 ```
 install.packages("devtools")
 devtools::install_github("r-lib/devtools")
+install.packages("igraph")
+
+
+install.packages("~/src/ROBITaxonomy/", repos = NULL, type="source")
+install.packages("~/src/ROBITools/", repos = NULL, type="source")
 ```
 
 ## Data
