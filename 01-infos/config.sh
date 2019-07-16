@@ -5,7 +5,7 @@
 ## taxonomy
 TAXD=02-raw/taxdump
 ## EMBL dat files
-EMBLDAT=02-raw/EMBL/*dat
+EMBLDAT=02-raw/EMBL/rel_std_*dat
 ## converted EMBL OBIFASTA files
 EMBLOBIFA=02-raw/EMBL.obifasta
 ## FASTA.taxid custom files
