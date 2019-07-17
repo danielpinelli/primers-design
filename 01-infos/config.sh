@@ -23,7 +23,7 @@ ECOPRIME=04-primers/mullus01.ecoprimers
 ### [-e] Maximum number of errors (mismatches) allowed per primer.
 ecoPCR_e=3
 ### [-l] Minimum length of the in silico amplified DNA fragment, excluding primers.
-ecoPCR_l=20
+ecoPCR_l=50
 ### [-L] Maximum length of the in silico amplified DNA fragment, excluding primers.
 ecoPCR_L=150
 
@@ -38,3 +38,10 @@ MS_DL1_R=TAATAAATCGCTAGCGGT
 
 MS_DL2_F=GTGAGGGACAAAAATCGT
 MS_DL2_R=TCGGCATGGTGGGTAACG
+
+
+MS-DL3-F=GGGCAGGGGGTTCCTTTT
+MS-DL3-R=TGAGGAGGTATAGATCAG
+
+MS-DL4-F=TATGCATACGTATACTGA
+MS-DL4-R=TTCAATAAACGTATGCTT
