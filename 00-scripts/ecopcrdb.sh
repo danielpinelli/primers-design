@@ -11,10 +11,10 @@ source ./01-infos/config.sh
 #obiconvert --skip-on-error --embl -t $TAXD --ecopcrdb-output=$ECOPCRDAT $EMBLDAT mullus.embl.id.dat
 ## convert custom mullus EMBL int ocopcrdb
 #obiconvert --skip-on-error --embl -t $TAXD -ecopcrdb-output=mullusEco mullus.embl.id.dat
-ecoPCR -r $TELEOSTEI_TAXID -d mullus_pcr -e $ecoPCR_e -l $ecoPCR_l -L $ecoPCR_L $MS_DL1_F $MS_DL1_R > mullus_MS_DL1.ecopcr
-ecoPCR -r $TELEOSTEI_TAXID -d mullus_pcr -e $ecoPCR_e -l $ecoPCR_l -L $ecoPCR_L $MS_DL2_F $MS_DL2_R > mullus_MS_DL2.ecopcr
-ecoPCR -r $TELEOSTEI_TAXID -d mullus_pcr -e $ecoPCR_e -l $ecoPCR_l -L $ecoPCR_L $MS_DL3_F $MS_DL3_R > mullus_MS_DL3.ecopcr
-ecoPCR -r $TELEOSTEI_TAXID -d mullus_pcr -e $ecoPCR_e -l $ecoPCR_l -L 300 $MS_DL4_F $MS_DL4_R > mullus_MS_DL4.ecopcr
+ecoPCR -d $ECOPCRDAT -e $ecoPCR_e -l $ecoPCR_l -L $ecoPCR_L $MS_DL1_F $MS_DL1_R > mullus_std_MS_DL1.ecopcr
+ecoPCR -d $ECOPCRDAT -e $ecoPCR_e -l $ecoPCR_l -L $ecoPCR_L $MS_DL2_F $MS_DL2_R > mullus_std_MS_DL2.ecopcr
+ecoPCR -d $ECOPCRDAT -e $ecoPCR_e -l $ecoPCR_l -L $ecoPCR_L $MS_DL3_F $MS_DL3_R > mullus_std_MS_DL3.ecopcr
+ecoPCR -d $ECOPCRDAT -e $ecoPCR_e -l $ecoPCR_l -L 300 $MS_DL4_F $MS_DL4_R > mullus_std_MS_DL4.ecopcr
 
 
 
