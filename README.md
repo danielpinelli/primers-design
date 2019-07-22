@@ -111,3 +111,161 @@ Reading 2096301 taxa...
 No local taxon
 # Reading file 03-ecopcr/mulos_001.sdx containing 0 sequences...
 # Reading file 03-ecopcr/mulos_002.sdx containing 0 sequences...
+
+_________________
+
+
+## primers-design with ecoPrimers
+The design of primers is done on the sequences defined in laboratory combined with a base of references targeting for example the family of the target species (Mullidae) or the class (Teleostei). Download in .gbK format all referenced D-loop sequences from the Mullidae family and the taxonomic reference base.
+
+```
+wget 'ftp://ftp.ncbi.nlm.nih.gov://pub/taxonomy/taxdump.tar.gz'
+mkdir TAXO
+cd TAXO/
+tar -zxvf taxdump.tar.gz
+cd ..
+```
+Write in NCBI the link below and download the 552 sequences in .gbk format. Create an NCBI folder and drop the genbank file.
+```
+D-loop[All Fields] AND ("Mullidae"[Organism] OR ("Mullidae"[Organism] OR Mullidae[All Fields]))
+
+mkdir NCBI/
+```
+Convert the genbank file into Fasta format. 
+```
+obiconvert NCBI/* > mullidae_dloop.fasta
+```
+Copy paste the 21 sequences obtained in the laboratory and their number taxid (taxid = 87757) in the file Mullidae_Dloop.fasta. Convert this file to ecopcr format (ndx, rdx, tdx, sdx).
+```
+obiconvert --skip-on-error --fasta -t ./TAXO --ecopcrdb-output=database_mullidae_dloop > /root/.../mullidae_dloop.fasta
+```
+Design the primers according to several criteria with ecoPrimers on the files in ecopcr format. Specify the maximum shadow of errors (inconsistencies) allowed by primer (-e 3), specify the minimum and maximum length of the barcode excluding primers (-l 100 -L 150), specify the taxid to amplify ( 87757) and the counterexample taxid (342443).
+```
+ecoPrimers -d database_mullidae_dloop -e 3 -l 100 -L 150 -r 87757 -E 342443 > mullus_barcodes.ecoprimers
+```
+Example of ecoPrimers result.
+```
+# ecoPrimer version 0.5
+# Rank level optimisation : species
+# max error count by oligonucleotide : 3
+#
+# Restricted to taxon:
+#     87757 : Mullus surmuletus (species)
+#
+# strict primer quorum  : 0.70
+# example quorum        : 0.90
+# counterexample quorum : 0.10
+#
+# database : sequences
+# Database is constituted of    18 examples        corresponding to     1 species
+#                        and    65 counterexamples corresponding to     1 species
+#
+# amplifiat length between [100,150] bp
+# DB sequences are considered as linear
+# Pairs having specificity less than 0.60 will be ignored
+#
+
+1  CATACGTATACTGATATA      TAATAAATCGCTAGCGGT      42.4    30.0    51.5    49.7    5       7       GG      18      0       1.000   1       0       1.000   1       1.000   140     140     140.00
+2  CATACGTATACTGATATA      TTAATAAATCGCTAGCGG      42.4    30.0    50.5    45.7    5       7       GG      18      0       1.000   1       0       1.000   1       1.000   141     141     141.00
+3  ATTAATAAATCGCTAGCG      CATACGTATACTGATATA      48.2    43.2    42.4    30.0    6       5       GG      18      0       1.000   1       0       1.000   1       1.000   142     142     142.00
+4  CATACGTATACTGATATA      GATTAATAAATCGCTAGC      42.4    30.0    46.4    41.1    5       6       GG      18      0       1.000   1       0       1.000   1       
+```
+
+
+## database design and ecoPCR test in silico
+In the mullus_barcodes.ecoprimers file you can choose the primers that match your request. Subsequently, we must test the quality of primers with the ecoPCR program. ecoPCR performs in silico PCR. Primers designed should only amplify the target species, Mullus surmuletus.
+To perform this operation you have to download all the basic EMBL references and convert ecopcr format.
+```
+mkdir EMBL
+cd EMBL
+wget ftp://ftp.ebi.ac.uk/pub/databases/ena/sequence/release/std/*
+gunzip -d *gz
+cd ..
+```
+Before converting the reference database to .ecopcr format, we have to combine our 21 laboratory-defined sequences with the EMBL reference database.
+```
+seqret -sequence mullus_dloop.fasta -osformat embl -outseq mullus_dloop.dat
+```
+Convert the entire EMBL + mullus_dloop.dat reference database to ecopcr format.
+```
+Obiconvert --skip-on-error --embl -t ./TAXO --ecopcrdb-output=database_embl ./EMBL/*.dat
+```
+Test the quality of primers with ecoPCR.
+```
+ecoPCR -d ./EMBL -e 3 -l 100 -L 150  CATACGTATACTGATATA TAATAAATCGCTAGCGGT> MS_DL1.ecopcr
+ecoPCR -d ./EMBL -e 3 -l 100 -L 150  GTGAGGGACAAAAATCGT TCGGCATGGTGGGTAACG> MS_DL2.ecopcr
+ecoPCR -d ./EMBL -e 3 -l 100 -L 150  GGGCAGGGGGTTCCTTTT TGAGGAGGTATAGATCAG> MS_DL3.ecopcr
+ecoPCR -d ./EMBL -e 3 -l 100 -L 300  TATGCATACGTATACTGA TTCAATAAACGTATGCTT> MS_DL4.ecopcr
+```
+Example of ecoPCR result.
+```
+# ecoPCR version 1.0.1
+# direct  strand oligo1 : CATACGTATACTGATATA               ; oligo2c :               ACCGCTAGCGATTTATTA
+# reverse strand oligo2 : TAATAAATCGCTAGCGGT               ; oligo1c :               TATATCAGTATACGTATG
+# max error count by oligonucleotide : 3
+# optimal Tm for primers 1 : 41.19
+# optimal Tm for primers 2 : 50.30
+# database : 03-ecopcr/refdb
+# amplifiat length between [50,150] bp
+# output in superkingdom mode
+# DB sequences are considered as linear
+#
+CP017762        |   4749385 |  1911587 | species              |  1911587 | Virgibacillus sp. 6R           |    84406 | Virgibacillus                  |   186817 | Bacillaceae                    |        2 | Bacteria                       | D | CATACATATAATGATATA               |  2 | 17.44 | TAATAACTCGATAGAGGT               |  3 | 21.47 |   143 | AGAGTTTCTCCAGCAATCCATATAACGTTGGGTTTTTCTGTTCCATTTCGTTAATGATGAGAAAAATTTGTTTCACTAACGTATGATCCCGGAAGTCTTCCATATCGTTTGGGTTTATTTCTATATTTCTTCCCCACTTGCTA | Virgibacillus sp. 6R, complete genome
+INTRAPOPMULMS9SN |       800 |    87757 | species              |    87757 | Mullus surmuletus              |    37006 | Mullus                         |    30854 | Mullidae                       |     2759 | Eukaryota                      | D | CATACGTATACTGATATA               |  0 | 41.19 | TAATAAATCGCTAGCGGT               |  0 | 50.30 |   140 | GGACACGATATGTATTAAAACCATTTTAATGATTTAAACCAATCAGGTCCCAAATCCGTAGAAATCCCAGAAAACAGGACAGATAAAAAAGAAGACTCAAATAAGTACGAAACAGCAAAAATACAGAAATAGAACTGATG | Mullus surmuletus mitochondrial DNA Dloop
+INTRAPOPMULMS8SN |       800 |    87757 | species              |    87757 | Mullus surmuletus              |    37006 | Mullus                         |    30854 | Mullidae                       |     2759 | Eukaryota                      | D | CATACGTATACTGATATA               |  0 | 41.19 | TAATAAATCGCTAGCGGT               |  0 | 50.30 |   140 | GGACACGATATGTATTAAGACCATCTTARTGATTCAAACCAATCGG-TCCAAAATCCATAGAAGTCCCAGAAAACAGGACAGATAAAAAAGAAGACTCAAATAAGTACGAAATACCAAAAATACAGAAATAGAACTGATG | Mullus surmuletus mitochondrial DNA Dloop
+INTRAPOPMULMS2SN |       800 |    87757 | species              |    87757 | Mullus surmuletus              |    37006 | Mullus                         |    30854 | Mullidae                       |     2759 | Eukaryota                      | D | CATACGTATACTGATATA               |  0 | 41.19 | TAATAAATCGCTAGCGGT               |  0 | 50.30 |   140 | GGACACGATATGTATTAAGACCATTTTARTGATTCAAACCAATCRGGTCCAAAATCCATARAAGTCCCAGAAAACAGGACAGATAAAAAAGAAGACTCAAATAAGTACGAAATACCAAAAATACAAAAATAGAACTGATG | Mullus surmuletus mitochondrial DNA Dloop
+```
+
+## Visualization with R of the ecoPCR test with ROBITools, ROBITaxonomy and ROBIBarcodes packages.
+Use R on linux and install the packages.
+```
+install.packages ('/root/.../ROBITaxonomy-master.tar.gz', repos = NULL, type = "source")
+install.packages ('/root/.../ROBITools-master.tar.gz', repos = NULL, type = "source")
+install.packages ('/root/.../ROBIBarcodes-master.tar.gz', repos = NULL, type = "source")
+library (ROBITaxonomy)
+library (ROBITools)
+library (ROBIBarcodes)
+```
+Loading taxonomic data and ecopcr file.
+```
+fishpcr = read.ecopcr.result('MS_DL1.ecopcr')
+taxo = read.taxonomy ('/root/.../TAXO')
+```
+Identify sequences that belong to Mullidae or Mullus surmuletus.
+```
+mullus.taxid = ecofind(taxo,'^Mullidae$')
+```
+```
+is_a_fish=is.subcladeof(taxo,fishpcr$taxid,mullus.taxid)
+table(is_a_fish)
+
+## is_a_fish
+## FALS TRUE 
+##   1   21
+```
+Testing the conservation of the priming sites.
+```
+MS_DL1.forward = ecopcr.forward.shanon(ecopcr = fishpcr, group = is_a_fish)
+MS_DL1.reverse = ecopcr.reverse.shanon(ecopcr = fishpcr, group = is_a_fish)
+```
+Ploting the results.
+```
+png(file = "primers1.png")
+par(mfcol=c(3,2))
+dnalogoplot(Fish.forward$'TRUE',primer = "CATACGTATACTGATATA", main='Forward MS-DL1')
+dnalogoplot(Fish.forward$'FALSE',primer = "CATACATATAATGATATA", main='Forward not Fish')
+dnalogoplot(Fish.reverse$'TRUE',primer = "TAATAAATCGCTAGCGGT", main='Reverse MS-DL1')
+dnalogoplot(Fish.reverse$'FALSE',primer = "TAATAACTCGATAGAGGT",main='Reverse not Fish')
+dev.off()
+```
+How mismatches influence taxonomical selection.
+```
+png(file = "Mismatch1.png")
+par(mfcol=c(1,1))
+mismatchplot(fish,group = is_a_fish, legend=c('Virgibacillus sp','Mullus surmuletus'),  col = c('red','gray14'))
+dev.off()
+```
+repeat the operation with the other 3 pairs of primers.
+```
+# End
+```
