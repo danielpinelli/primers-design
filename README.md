@@ -1,7 +1,11 @@
 # Primer design and in silico primer test
-I present here the key steps to design primers and test them in silico rigorously. The ecoPrimer program (Riaz et al., 2011) has the particularity of being able to design primers that amplify markers specific to the target species and that can be used for eDNA. The primers are then tested using the ecoPCR program (Ficetola et al., 2010, Bellemain et al., 2010), performing an in-silico PCR based on EMBL data including a large number of referenced species. This EMBL database is combined with the sequences obtained in the laboratory. For more information on the programs do not hesitate to consult: 
-ecoPrimers : https://pythonhosted.org/OBITools/scripts/ecoPrimers.html
-ecoPCR : https://pythonhosted.org/OBITools/scripts/ecoPCR.html
+I present here the key steps to design primers and test them in silico rigorously. The ecoPrimer program (Riaz et al., 2011) has the particularity of being able to design primers that amplify markers specific to the target species. The primers are then tested using the ecoPCR program (Ficetola et al., 2010, Bellemain et al., 2010), performing an in-silico PCR based on EMBL data including a large number of referenced species. This EMBL database is combined with the sequences obtained in the laboratory for the species Mullus surmuletus (this species is taken as an example to create and test primers).The ecoPCR program allows you to see if the target species is amplified and if non-target species are amplified. For more information on the programs and their installation, do not hesitate to consult: 
+ecoPrimers : 
+https://git.metabarcoding.org/obitools/ecoprimers/wikis/home
+https://pythonhosted.org/OBITools/scripts/ecoPrimers.html
+ecoPCR : 
+https://git.metabarcoding.org/obitools/ecopcr/wikis/home
+https://pythonhosted.org/OBITools/scripts/ecoPCR.html
 
 ## Installation
 
@@ -65,32 +69,14 @@ install.packages("~/src/ROBITools/", repos = NULL, type="source")
 - EMBL
 - TAXO
 
-## database design (sequences and taxa)
-You have to download all GenBank sequences and combine them with our lab-defined sequences in .gbk format. In parallel, all taxon identifiers must be downloaded into a separate file.
-```
-wget 'ftp://ftp.ncbi.nlm.nih.gov://pub/taxonomy/taxdump.tar.gz'
-mkdir TAXO
-cd TAXO/
-tar -zxvf taxdump.tar.gz
-cd ..
-```
-```
-mkdir EMBL
-cd EMBL
-wget ftp://ftp.ebi.ac.uk/pub/databases/ena/sequence/release/std/*
-gunzip -d *gz
-cd ..
-```
+## 
 The database must be converted to ecoPrimers / ecoPCR format.
 ```
 obiconvert --skip-on-error --embl -t /root/bureau/projet1/PrimerDesign-master/PrimerDesign-master/taxo/TAXO/ --ecopcrdb-output="testobiconvert" rel_est_env_01_r1
 ```
-PE : ou tu tapes (les parameters sont dans 01-infos/config.sh) :
-```
-bash 00-scripts/ecopcrdb.sh
-```
 
-## primers-design with ecoPrimers
+# primers-design with ecoPrimers
+## Step 1 : 
 The design of primers is done on the sequences defined in laboratory combined with a base of references targeting for example the family of the target species (Mullidae) or the class (Teleostei). Download in .gbK format all referenced D-loop sequences from the Mullidae family and the taxonomic reference base.
 
 ```
