@@ -1,5 +1,7 @@
-# primers-design
-
+# Primer design and in silico primer test
+I present here the key steps to design primers and test them in silico rigorously. The ecoPrimer program (Riaz et al., 2011) has the particularity of being able to design primers that amplify markers specific to the target species and that can be used for eDNA. The primers are then tested using the ecoPCR program (Ficetola et al., 2010, Bellemain et al., 2010), performing an in-silico PCR based on EMBL data including a large number of referenced species. This EMBL database is combined with the sequences obtained in the laboratory. For more information on the programs do not hesitate to consult: 
+ecoPrimers : https://pythonhosted.org/OBITools/scripts/ecoPrimers.html
+ecoPCR : https://pythonhosted.org/OBITools/scripts/ecoPCR.html
 
 ## Installation
 
@@ -59,8 +61,7 @@ install.packages("~/src/ROBITools/", repos = NULL, type="source")
 
 ## Data
 
-- [mullus.fa](02-raw/mullus.fa) : j'ai sequence ces donnees.....
-- [mullus.taxid.fa](02/raw/mullus.taxid.fa) : taxid........
+- [mullus.taxid.fa](02/raw/mullus.taxid.fa) : sequences obtained in the laboratory
 - EMBL
 - TAXO
 
