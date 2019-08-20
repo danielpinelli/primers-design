@@ -179,9 +179,40 @@ fishpcr = read.ecopcr.result('MS_DL1.ecopcr')
 taxo = read.taxonomy ('/root/.../TAXO')
 ```
 
-## Step 9: Identify sequences that belong to Mullidae or Mullus surmuletus.
+## Step 9: Identify the amplified sequences and create a graph
+Depending on the output of ecoPCR, create groups of taxa that are amplified. The MS-DL1 primer pair amplifies the sequences of the target species (Mullus surmuletus) but also sequences belonging to other species such as a marine bacterium (Vibrio parahaemolyticus), a marine fish (Sparus aurata) and other species that are unlikely to be in the same ecosystem as our target species.
+
+```
+is_a_mullus=is.subcladeof(taxo,mullus$taxid,37006)
+is_a_fish=is.subcladeof(taxo,mullus$taxid,2759)
+is_a_bact=is.subcladeof(taxo,mullus$taxid,641)
+is_a_fish1=is.subcladeof(taxo,mullus$taxid,8169)
+group = rep('Other species',length(is_a_fish))
+group[is_a_mullus]='Mullus surmuletus'
+group[is_a_bact]='Marine bacteria'
+group[is_a_fish1]='Other marine fish'
+group=as.factor(group)
+table(group)
+
+```
+Results of creating groups
+
+```
+Marine bacteria Mullus surmuletus Other marine fish     Other species
+       7                20                 1                15
 ```
 
+After creating the groups, we can represent them with a graph.
+
+```
+png(file = "Mismatch1.png")
+par(mfcol=c(1,1))
+mismatchplot(mullus,group =group, col=c('orange','red','white','dodgerblue'))
+dev.off()
+
+```
+```
+ ![Screenshot](../root/bureau/WORKING/GITHUB/primers-design/Mismatch1.png) 
 ```
 Testing the conservation of the priming sites.
 ```
