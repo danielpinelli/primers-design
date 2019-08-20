@@ -222,10 +222,10 @@ Ploting the results of conservation of the priming sites.
 png(file = "primers1.png")
 par(mfcol=c(3,2))
 dnalogoplot(Fish.forward$'TRUE',primer = "CATACGTATACTGATATA", main='Forward MS-DL1')
-dnalogoplot(Fish.forward$'FALSE',primer = "CATACATATAATGATATA", main='Forward not Fish')
 dnalogoplot(Fish.reverse$'TRUE',primer = "TAATAAATCGCTAGCGGT", main='Reverse MS-DL1')
-dnalogoplot(Fish.reverse$'FALSE',primer = "TAATAACTCGATAGAGGT",main='Reverse not Fish')
 dev.off()
 ```
+![Conservation sites primers](DL1.png)
+
 ## Repeat the operation with the other pairs of primers
 We finished. Specific target species primers (Mullus surmuletus) were created and these primers were tested in silico PCR throughout the EMBL database. The primers are not perfect because they also amplify some other taxa but it can still work in eDNA. After having designed and tested in silico the primers, the next step will be to perform an in vitro test (test the primers on the DNA extracted from the target species to ensure that it is well amplified).
