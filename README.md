@@ -1,16 +1,10 @@
 # Primer design and in silico primer test
-I present here the key steps to design primers and test them in silico rigorously. The ecoPrimer program (Riaz et al., 2011) has the particularity of being able to design primers that amplify markers specific to the target species. The primers are then tested using the ecoPCR program (Ficetola et al., 2010, Bellemain et al., 2010), performing an in-silico PCR based on EMBL data including a large number of referenced species. This EMBL database is combined with the sequences obtained in the laboratory for the species Mullus surmuletus (this species is taken as an example to create and test primers on the D-loop of the mitochondrial genome).The ecoPCR program allows you to see if the target species is amplified and if non-target species are amplified. For more information on the programs and their installation, do not hesitate to consult: 
+I present here the key steps to design primers and test them in silico rigorously. The ecoPrimer program (Riaz et al., 2011) has the particularity of being able to design primers that amplify markers specific to the target species. The primers are then tested using the ecoPCR program (Ficetola et al., 2010, Bellemain et al., 2010), performing an in-silico PCR based on EMBL data including a large number of referenced species. This EMBL database is combined with the sequences obtained in the laboratory for the species Mullus surmuletus (this species is taken as an example to create and test primers on the D-loop of the mitochondrial genome).The ecoPCR program allows you to see if the target species is amplified and if non-target species are amplified. For more information on the programs and their installation, do not hesitate to consult : 
 
 [ecoPrimers](https://git.metabarcoding.org/obitools/ecoprimers/wikis/home)
- 
 
-https://git.metabarcoding.org/obitools/ecoprimers/wikis/home
-https://pythonhosted.org/OBITools/scripts/ecoPrimers.html
+[ecoPCR](https://git.metabarcoding.org/obitools/ecopcr/wikis/home)
 
-ecoPCR : 
-
-https://git.metabarcoding.org/obitools/ecopcr/wikis/home
-https://pythonhosted.org/OBITools/scripts/ecoPCR.html
 
 ## Installation
 To run the scripts, follow the installations below :
