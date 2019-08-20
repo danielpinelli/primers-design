@@ -45,40 +45,11 @@ ln -s /taxo/ 02-raw/taxdump
 
 ```
 
-### R packages
-
-#### ROBITOOLS
-
-ubuntu linux shell
-```
-yes | sudo apt-get install libcurl4-openssl-dev libxml2 libxml2-dev libssl-dev
-
-git clone https://git.metabarcoding.org/obitools/ROBITaxonomy.git
-git clone https://git.metabarcoding.org/obitools/ROBITools.git
-```
-
-R environment
-```
-install.packages("devtools")
-devtools::install_github("r-lib/devtools")
-install.packages("igraph")
-
-
-install.packages("~/src/ROBITaxonomy/", repos = NULL, type="source")
-install.packages("~/src/ROBITools/", repos = NULL, type="source")
-```
-
 ## Data
 
 - [mullus.taxid.fa](02/raw/mullus.taxid.fa) : sequences obtained in the laboratory
 - EMBL
 - TAXO
-
-## 
-The database must be converted to ecoPrimers / ecoPCR format.
-```
-obiconvert --skip-on-error --embl -t /root/bureau/projet1/PrimerDesign-master/PrimerDesign-master/taxo/TAXO/ --ecopcrdb-output="testobiconvert" rel_est_env_01_r1
-```
 
 # Primers design with ecoPrimers
 ## Step 1 : Download Mullidae's sequences on NCBI (.gbk format)
@@ -189,8 +160,11 @@ INTRAPOPMULMS8SN |       800 |    87757 | species              |    87757 | Mull
 INTRAPOPMULMS2SN |       800 |    87757 | species              |    87757 | Mullus surmuletus              |    37006 | Mullus                         |    30854 | Mullidae                       |     2759 | Eukaryota                      | D | CATACGTATACTGATATA               |  0 | 41.19 | TAATAAATCGCTAGCGGT               |  0 | 50.30 |   140 | GGACACGATATGTATTAAGACCATTTTARTGATTCAAACCAATCRGGTCCAAAATCCATARAAGTCCCAGAAAACAGGACAGATAAAAAAGAAGACTCAAATAAGTACGAAATACCAAAAATACAAAAATAGAACTGATG | Mullus surmuletus mitochondrial DNA Dloop
 ```
 
-## Visualization with R of the ecoPCR test with ROBITools, ROBITaxonomy and ROBIBarcodes packages.
-Use R on linux and install the packages.
+# Visualization with R of the ecoPCR test with ROBITools, ROBITaxonomy and ROBIBarcodes packages.
+It is possible to obtain a representation of the ecoPCR results in order to visualize the target or non-target species that are amplified. It is also possible to observe if the nucleotide sites are well conserved in the primers within the target species (between all the amplified sequences of the target species).
+
+## Step 7: Use R on linux and install the packages.
+
 ```
 install.packages ('/root/.../ROBITaxonomy-master.tar.gz', repos = NULL, type = "source")
 install.packages ('/root/.../ROBITools-master.tar.gz', repos = NULL, type = "source")
@@ -199,22 +173,15 @@ library (ROBITaxonomy)
 library (ROBITools)
 library (ROBIBarcodes)
 ```
-Loading taxonomic data and ecopcr file.
+## Step 8: Loading taxonomic data and ecopcr file.
 ```
 fishpcr = read.ecopcr.result('MS_DL1.ecopcr')
 taxo = read.taxonomy ('/root/.../TAXO')
 ```
-Identify sequences that belong to Mullidae or Mullus surmuletus.
-```
-mullus.taxid = ecofind(taxo,'^Mullidae$')
-```
-```
-is_a_fish=is.subcladeof(taxo,fishpcr$taxid,mullus.taxid)
-table(is_a_fish)
 
-## is_a_fish
-## FALS TRUE 
-##   1   21
+## Step 9: Identify sequences that belong to Mullidae or Mullus surmuletus.
+```
+
 ```
 Testing the conservation of the priming sites.
 ```
