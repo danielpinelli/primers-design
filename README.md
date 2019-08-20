@@ -201,7 +201,6 @@ Results of creating groups
 Marine bacteria Mullus surmuletus Other marine fish     Other species
        7                20                 1                15
 ```
-
 After creating the groups, we can represent them with a graph.
 
 ```
@@ -211,13 +210,8 @@ mismatchplot(mullus,group =group, col=c('orange','red','white','dodgerblue'))
 dev.off()
 
 ```
-![Number of mismatch with reverse (y) and forward (x) primers](Mismatch1.png)
+![Number of mismatch with forwad (x) and reverse (y) primers](Mismatch1.png)
 
-```
-![Number of mismatch with reverse (y) and forward (x) primers](GITHUB/primers-design/Mismatch1.png)
-
-![Number of mismatch with reverse (y) and forward (x) primers](Mismatch1.png)
-```
 ## Step 10: Testing the conservation of the priming sites and create a graph
 ```
 MS_DL1.forward = ecopcr.forward.shanon(ecopcr = fishpcr, group = is_a_fish)
