@@ -230,4 +230,4 @@ dnalogoplot(Fish.reverse$'FALSE',primer = "TAATAACTCGATAGAGGT",main='Reverse not
 dev.off()
 ```
 ## Repeat the operation with the other pairs of primers. 
-We finished. Specific target species primers (Mullus surmuletus) were created and these primers were tested in silico PCR throughout the EMBL database. The primers are not perfect because they also amplify some other taxa but it can still work in cDNA. After having designed and tested in silico the primers, the next step will be to perform an in vitro test (test the primers on the DNA extracted from the target species to ensure that it is well amplified).
+We finished. Specific target species primers (Mullus surmuletus) were created and these primers were tested in silico PCR throughout the EMBL database. The primers are not perfect because they also amplify some other taxa but it can still work in eDNA. After having designed and tested in silico the primers, the next step will be to perform an in vitro test (test the primers on the DNA extracted from the target species to ensure that it is well amplified).
