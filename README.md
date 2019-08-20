@@ -211,10 +211,12 @@ mismatchplot(mullus,group =group, col=c('orange','red','white','dodgerblue'))
 dev.off()
 
 ```
+![Number of mismatch with reverse (y) and forward (x) primers](Mismatch1.png)
+
 ```
 ![Number of mismatch with reverse (y) and forward (x) primers](GITHUB/primers-design/Mismatch1.png)
 
-![title](Mismatch1.png)
+![Number of mismatch with reverse (y) and forward (x) primers](Mismatch1.png)
 ```
 ## Step 10: Testing the conservation of the priming sites and create a graph
 ```
