@@ -68,7 +68,7 @@ D-loop[All Fields] AND ("Mullidae"[Organism] OR ("Mullidae"[Organism] OR Mullida
 
 mkdir NCBI/
 ```
-## Step 2 : Convert the genbank file into Fasta format. 
+## Step 2 : Convert the genbank file into Fasta format
 The data downloaded in .gbk format contain important information such as the taxid number etc ... This is why we download them in this format. The conversion of this file into fasta format will allow us to copy/paste our fasta Mullus surmuletus sequences obtained in the laboratory.
 
 ```
@@ -132,7 +132,7 @@ Convert the entire EMBL + mullus_dloop.dat reference database to ecopcr format.
 ```
 Obiconvert --skip-on-error --embl -t ./TAXO --ecopcrdb-output=database_embl ./EMBL/*.dat
 ```
-## Step 6: Test PCR in silico.
+## Step 6: Test PCR in silico
 To test the primers on the EMBL database combined with the sequences obtained in the laboratory, several criteria must be specified. It is necessary, for example, to specify the maximum size of the sequences that can be amplified (-L 1000) during a PCR, the maximum number of errors allowed by primers (-e 3) and the forward and reverse primers that will be tested.
 
 ```
@@ -163,7 +163,7 @@ INTRAPOPMULMS2SN |       800 |    87757 | species              |    87757 | Mull
 # Visualization with R of the ecoPCR test with ROBITools, ROBITaxonomy and ROBIBarcodes packages.
 It is possible to obtain a representation of the ecoPCR results in order to visualize the target or non-target species that are amplified. It is also possible to observe if the nucleotide sites are well conserved in the primers within the target species (between all the amplified sequences of the target species).
 
-## Step 7: Use R on linux and install the packages.
+## Step 7: Use R on linux and install the packages
 
 ```
 install.packages ('/root/.../ROBITaxonomy-master.tar.gz', repos = NULL, type = "source")
@@ -173,7 +173,7 @@ library (ROBITaxonomy)
 library (ROBITools)
 library (ROBIBarcodes)
 ```
-## Step 8: Loading taxonomic data and ecopcr file.
+## Step 8: Loading taxonomic data and ecopcr file
 ```
 fishpcr = read.ecopcr.result('MS_DL1.ecopcr')
 taxo = read.taxonomy ('/root/.../TAXO')
@@ -214,7 +214,7 @@ dev.off()
 ```
  ![Number of mismatch with reverse (y) and forward (x) primers](Mismatch1.png) 
 ```
-Testing the conservation of the priming sites.
+## Step 10: Testing the conservation of the priming sites and create a graph
 ```
 MS_DL1.forward = ecopcr.forward.shanon(ecopcr = fishpcr, group = is_a_fish)
 MS_DL1.reverse = ecopcr.reverse.shanon(ecopcr = fishpcr, group = is_a_fish)
@@ -229,5 +229,5 @@ dnalogoplot(Fish.reverse$'TRUE',primer = "TAATAAATCGCTAGCGGT", main='Reverse MS-
 dnalogoplot(Fish.reverse$'FALSE',primer = "TAATAACTCGATAGAGGT",main='Reverse not Fish')
 dev.off()
 ```
-## Repeat the operation with the other pairs of primers. 
+## Repeat the operation with the other pairs of primers
 We finished. Specific target species primers (Mullus surmuletus) were created and these primers were tested in silico PCR throughout the EMBL database. The primers are not perfect because they also amplify some other taxa but it can still work in eDNA. After having designed and tested in silico the primers, the next step will be to perform an in vitro test (test the primers on the DNA extracted from the target species to ensure that it is well amplified).
