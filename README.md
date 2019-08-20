@@ -219,7 +219,7 @@ Testing the conservation of the priming sites.
 MS_DL1.forward = ecopcr.forward.shanon(ecopcr = fishpcr, group = is_a_fish)
 MS_DL1.reverse = ecopcr.reverse.shanon(ecopcr = fishpcr, group = is_a_fish)
 ```
-Ploting the results.
+Ploting the results of conservation of the priming sites.
 ```
 png(file = "primers1.png")
 par(mfcol=c(3,2))
@@ -229,14 +229,4 @@ dnalogoplot(Fish.reverse$'TRUE',primer = "TAATAAATCGCTAGCGGT", main='Reverse MS-
 dnalogoplot(Fish.reverse$'FALSE',primer = "TAATAACTCGATAGAGGT",main='Reverse not Fish')
 dev.off()
 ```
-How mismatches influence taxonomical selection.
-```
-png(file = "Mismatch1.png")
-par(mfcol=c(1,1))
-mismatchplot(fish,group = is_a_fish, legend=c('Virgibacillus sp','Mullus surmuletus'),  col = c('red','gray14'))
-dev.off()
-```
-repeat the operation with the other 3 pairs of primers.
-```
-# End
-```
+## Repeat the operation with the other pairs of primers. We finished. Specific target species primers (Mullus surmuletus) were created and these primers were tested in silico PCR throughout the EMBL database. The primers are not perfect because they also amplify some other taxa but it can still work in cDNA. After having designed and tested in silico the primers, the next step will be to perform an in vitro test (test the primers on the DNA extracted from the target species to ensure that it is well amplified).
