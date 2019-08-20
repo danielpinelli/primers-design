@@ -212,8 +212,8 @@ dev.off()
 
 ```
 ```
+![Number of mismatch with reverse (y) and forward (x) primers](primers-design/Mismatch1.png)
 ![Number of mismatch with reverse (y) and forward (x) primers](Mismatch1.png)
-![Number of mismatch with reverse (y) and forward (x) primers](Plot1)
 ```
 ## Step 10: Testing the conservation of the priming sites and create a graph
 ```
