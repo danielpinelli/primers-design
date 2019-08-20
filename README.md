@@ -212,7 +212,7 @@ dev.off()
 
 ```
 ```
- ![Screenshot](../root/bureau/WORKING/GITHUB/primers-design/Mismatch1.png) 
+ ![Optional Text](../root/bureau/WORKING/GITHUB/primers-design/Mismatch1.png) 
 ```
 Testing the conservation of the priming sites.
 ```
