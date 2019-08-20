@@ -1,15 +1,18 @@
 # Primer design and in silico primer test
-I present here the key steps to design primers and test them in silico rigorously. The ecoPrimer program (Riaz et al., 2011) has the particularity of being able to design primers that amplify markers specific to the target species. The primers are then tested using the ecoPCR program (Ficetola et al., 2010, Bellemain et al., 2010), performing an in-silico PCR based on EMBL data including a large number of referenced species. This EMBL database is combined with the sequences obtained in the laboratory for the species Mullus surmuletus (this species is taken as an example to create and test primers on the D-loop).The ecoPCR program allows you to see if the target species is amplified and if non-target species are amplified. For more information on the programs and their installation, do not hesitate to consult: 
+I present here the key steps to design primers and test them in silico rigorously. The ecoPrimer program (Riaz et al., 2011) has the particularity of being able to design primers that amplify markers specific to the target species. The primers are then tested using the ecoPCR program (Ficetola et al., 2010, Bellemain et al., 2010), performing an in-silico PCR based on EMBL data including a large number of referenced species. This EMBL database is combined with the sequences obtained in the laboratory for the species Mullus surmuletus (this species is taken as an example to create and test primers on the D-loop of the mitochondrial genome).The ecoPCR program allows you to see if the target species is amplified and if non-target species are amplified. For more information on the programs and their installation, do not hesitate to consult: 
 
 ecoPrimers : 
+
 https://git.metabarcoding.org/obitools/ecoprimers/wikis/home
 https://pythonhosted.org/OBITools/scripts/ecoPrimers.html
 
 ecoPCR : 
+
 https://git.metabarcoding.org/obitools/ecopcr/wikis/home
 https://pythonhosted.org/OBITools/scripts/ecoPCR.html
 
 ## Installation
+To run the scripts, follow the installations below :
 
 ### Dependencies
 
@@ -79,7 +82,7 @@ obiconvert --skip-on-error --embl -t /root/bureau/projet1/PrimerDesign-master/Pr
 
 # Primers design with ecoPrimers
 ## Step 1 : Download Mullidae's sequences on NCBI (.gbk format)
-The design of primers is done on the sequences defined in laboratory combined with a base of references targeting for example the family of the target species (Mullidae) or the class (Teleostei). Download in .gbK format all referenced D-loop sequences from the Mullidae family and the taxonomic reference base.
+The design of primers is done on the sequences defined in laboratory combined with a base of references targeting for example the family of the target species (Mullidae) or the class (Teleostei). Thus, ecoPrimers will design primers on sequences of the target species (Mullus surmuletus) and avoid regions of the sequence that are similar to non-target species of the Mullidae family for D-loop. Download in .gbK format all referenced D-loop sequences from the Mullidae family and the taxonomic reference base.
 
 ```
 wget 'ftp://ftp.ncbi.nlm.nih.gov://pub/taxonomy/taxdump.tar.gz'
@@ -95,18 +98,18 @@ D-loop[All Fields] AND ("Mullidae"[Organism] OR ("Mullidae"[Organism] OR Mullida
 mkdir NCBI/
 ```
 ## Step 2 : Convert the genbank file into Fasta format. 
-The data downloaded in gbk format contain important information such as the taxid number etc ... This is why we download them in this format. The conversion of this file into fasta format will allow us to copy/paste our fasta Mullus surmuletus sequences obtained in the laboratory.
+The data downloaded in .gbk format contain important information such as the taxid number etc ... This is why we download them in this format. The conversion of this file into fasta format will allow us to copy/paste our fasta Mullus surmuletus sequences obtained in the laboratory.
 
 ```
 obiconvert NCBI/* > mullidae_dloop.fasta
 ```
 ## Step 3 : Copy/paste D-loop sequences of Mullus surmuelus and convert en format ecopcr
-Copy paste the 21 sequences obtained in the laboratory and their number taxid (taxid = 87757) in the file mullidae_dloop.fasta. Convert this file to ecopcr format (ndx, rdx, tdx, sdx).
+Copy/paste manually the sequences obtained in the laboratory and their number taxid (taxid = 87757) in the file mullidae_dloop.fasta. Convert this file to ecopcr format (ndx, rdx, tdx, sdx) (ecoPrimer only works with this specific format).
 
 ```
 obiconvert --skip-on-error --fasta -t ./TAXO --ecopcrdb-output=database_mullidae_dloop > /root/.../mullidae_dloop.fasta
 ```
-## Step 4 : 
+## Step 4 : Primer design
 Design the primers according to several criteria with ecoPrimers on the files in ecopcr format. Specify the maximum shadow of errors (inconsistencies) allowed by primer (-e 3), specify the minimum and maximum length of the barcode excluding primers (-l 100 -L 150), specify the taxid to amplify ( 87757) and the counterexample taxid (342443).
 ```
 ecoPrimers -d database_mullidae_dloop -e 3 -l 100 -L 150 -r 87757 -E 342443 > mullus_barcodes.ecoprimers
