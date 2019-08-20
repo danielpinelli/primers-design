@@ -212,7 +212,7 @@ dev.off()
 
 ```
 ```
- ![Number of mismatch with reverse (y) and forward (x) primers](Mismatch1.png) 
+ ![Number of mismatch with reverse (y) and forward (x) primers](/root/bureau/WORKING/GITHUB/primers-design/Mismatch1.png) 
 ```
 Testing the conservation of the priming sites.
 ```
