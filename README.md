@@ -110,7 +110,7 @@ Copy/paste manually the sequences obtained in the laboratory and their number ta
 obiconvert --skip-on-error --fasta -t ./TAXO --ecopcrdb-output=database_mullidae_dloop > /root/.../mullidae_dloop.fasta
 ```
 ## Step 4 : Primer design
-Design the primers according to several criteria with ecoPrimers on the files in ecopcr format. Specify the maximum shadow of errors (inconsistencies) allowed by primer (-e 3), specify the minimum and maximum length of the barcode excluding primers (-l 100 -L 150), specify the taxid to amplify ( 87757) and the counterexample taxid (342443).
+Design the primers according to several criteria with ecoPrimers on the files in ecopcr format. Specify the maximum number of errors (inconsistencies) allowed by primer (-e 3), specify the minimum and maximum length of the barcode excluding primers (-l 100 -L 150), specify the taxid to amplify ( 87757) and the counterexample taxid (342443).
 ```
 ecoPrimers -d database_mullidae_dloop -e 3 -l 100 -L 150 -r 87757 -E 342443 > mullus_barcodes.ecoprimers
 ```
@@ -142,10 +142,10 @@ Example of ecoPrimers result.
 4  CATACGTATACTGATATA      GATTAATAAATCGCTAGC      42.4    30.0    46.4    41.1    5       6       GG      18      0       1.000   1       0       1.000   1       
 ```
 
+# Database design and ecoPCR test in silico
+## Step 5: Download the EMBL database and convert it to ecopcr format
+In the mullus_barcodes.ecoprimers file, you can choose the primers that match your request. Subsequently, we must test the quality of the primers with the ecoPCR program that performs in silico PCR. That is, ecoPCR will test whether the primers amplify the Mullus surmuletus target species well and will also see if the primers do not amplify other non-target taxa. To perform this operation, you must download all EMBL baselines and convert the ecopcr format (read by ecoPCR).
 
-## database design and ecoPCR test in silico
-In the mullus_barcodes.ecoprimers file you can choose the primers that match your request. Subsequently, we must test the quality of primers with the ecoPCR program. ecoPCR performs in silico PCR. Primers designed should only amplify the target species, Mullus surmuletus.
-To perform this operation you have to download all the basic EMBL references and convert ecopcr format.
 ```
 mkdir EMBL
 cd EMBL
@@ -161,12 +161,14 @@ Convert the entire EMBL + mullus_dloop.dat reference database to ecopcr format.
 ```
 Obiconvert --skip-on-error --embl -t ./TAXO --ecopcrdb-output=database_embl ./EMBL/*.dat
 ```
-Test the quality of primers with ecoPCR.
+## Step 6: Test PCR in silico.
+To test the primers on the EMBL database combined with the sequences obtained in the laboratory, several criteria must be specified. It is necessary, for example, to specify the maximum size of the sequences that can be amplified (-L 1000) during a PCR, the maximum number of errors allowed by primers (-e 3) and the forward and reverse primers that will be tested.
+
 ```
-ecoPCR -d ./EMBL -e 3 -l 100 -L 150  CATACGTATACTGATATA TAATAAATCGCTAGCGGT> MS_DL1.ecopcr
-ecoPCR -d ./EMBL -e 3 -l 100 -L 150  GTGAGGGACAAAAATCGT TCGGCATGGTGGGTAACG> MS_DL2.ecopcr
-ecoPCR -d ./EMBL -e 3 -l 100 -L 150  GGGCAGGGGGTTCCTTTT TGAGGAGGTATAGATCAG> MS_DL3.ecopcr
-ecoPCR -d ./EMBL -e 3 -l 100 -L 300  TATGCATACGTATACTGA TTCAATAAACGTATGCTT> MS_DL4.ecopcr
+ecoPCR -d ./EMBL -e 3 -L 1000  CATACGTATACTGATATA TAATAAATCGCTAGCGGT> MS_DL1.ecopcr
+ecoPCR -d ./EMBL -e 3 -L 1000  GTGAGGGACAAAAATCGT TCGGCATGGTGGGTAACG> MS_DL2.ecopcr
+ecoPCR -d ./EMBL -e 3 -L 1000  GGGCAGGGGGTTCCTTTT TGAGGAGGTATAGATCAG> MS_DL3.ecopcr
+ecoPCR -d ./EMBL -e 3 -L 1000 TATGCATACGTATACTGA TTCAATAAACGTATGCTT> MS_DL4.ecopcr
 ```
 Example of ecoPCR result.
 ```
@@ -177,11 +179,11 @@ Example of ecoPCR result.
 # optimal Tm for primers 1 : 41.19
 # optimal Tm for primers 2 : 50.30
 # database : 03-ecopcr/refdb
-# amplifiat length between [50,150] bp
+# amplifiat length between [,1000] bp
 # output in superkingdom mode
 # DB sequences are considered as linear
 #
-CP017762        |   4749385 |  1911587 | species              |  1911587 | Virgibacillus sp. 6R           |    84406 | Virgibacillus                  |   186817 | Bacillaceae                    |        2 | Bacteria                       | D | CATACATATAATGATATA               |  2 | 17.44 | TAATAACTCGATAGAGGT               |  3 | 21.47 |   143 | AGAGTTTCTCCAGCAATCCATATAACGTTGGGTTTTTCTGTTCCATTTCGTTAATGATGAGAAAAATTTGTTTCACTAACGTATGATCCCGGAAGTCTTCCATATCGTTTGGGTTTATTTCTATATTTCTTCCCCACTTGCTA | Virgibacillus sp. 6R, complete genome
+CP003973        |   1806219 |  1211705 | no rank              |      670 | Vibrio parahaemolyticus        |      662 | Vibrio                         |      641 | Vibrionaceae                   |        2 | Bacteria                       | R | CAGAAGTTTACTGATATA               |  3 | 15.89 | TAATCAATCGCTAACCGT               |  3 | 11.35 |   325 | CGCATGGCTGGCTGCTGCGAATTGTAAAAATTGATGTCGGCCTATTGCTGACCATCGATTTTCGATAGCATATTTCTCAGCTTTGAGAGCATTTTTCAGATCGCAATTGGCACCGTTGTTTAACTTTTCACCATCGTACTTCTTTACAATGCTGTTATAGTTAGCAACATCTGACTCTAGGACACCCAGTAGTTTTAATAAATTTTCTTTACTGCTGTCTAACTCAATTTCATCTTTAACTCTAAAGTAGAATTCAGATGGCAGTTCGCTGACTCTTTTTAGGTCTTCTACAAACTTCTGATACCCTTCCGCTTCAATATTGAGC | Vibrio parahaemolyticus BB22OP chromosome 2
 INTRAPOPMULMS9SN |       800 |    87757 | species              |    87757 | Mullus surmuletus              |    37006 | Mullus                         |    30854 | Mullidae                       |     2759 | Eukaryota                      | D | CATACGTATACTGATATA               |  0 | 41.19 | TAATAAATCGCTAGCGGT               |  0 | 50.30 |   140 | GGACACGATATGTATTAAAACCATTTTAATGATTTAAACCAATCAGGTCCCAAATCCGTAGAAATCCCAGAAAACAGGACAGATAAAAAAGAAGACTCAAATAAGTACGAAACAGCAAAAATACAGAAATAGAACTGATG | Mullus surmuletus mitochondrial DNA Dloop
 INTRAPOPMULMS8SN |       800 |    87757 | species              |    87757 | Mullus surmuletus              |    37006 | Mullus                         |    30854 | Mullidae                       |     2759 | Eukaryota                      | D | CATACGTATACTGATATA               |  0 | 41.19 | TAATAAATCGCTAGCGGT               |  0 | 50.30 |   140 | GGACACGATATGTATTAAGACCATCTTARTGATTCAAACCAATCGG-TCCAAAATCCATAGAAGTCCCAGAAAACAGGACAGATAAAAAAGAAGACTCAAATAAGTACGAAATACCAAAAATACAGAAATAGAACTGATG | Mullus surmuletus mitochondrial DNA Dloop
 INTRAPOPMULMS2SN |       800 |    87757 | species              |    87757 | Mullus surmuletus              |    37006 | Mullus                         |    30854 | Mullidae                       |     2759 | Eukaryota                      | D | CATACGTATACTGATATA               |  0 | 41.19 | TAATAAATCGCTAGCGGT               |  0 | 50.30 |   140 | GGACACGATATGTATTAAGACCATTTTARTGATTCAAACCAATCRGGTCCAAAATCCATARAAGTCCCAGAAAACAGGACAGATAAAAAAGAAGACTCAAATAAGTACGAAATACCAAAAATACAAAAATAGAACTGATG | Mullus surmuletus mitochondrial DNA Dloop
